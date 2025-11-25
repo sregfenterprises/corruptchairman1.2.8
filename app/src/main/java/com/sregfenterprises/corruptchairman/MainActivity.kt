@@ -9,7 +9,7 @@ import com.sregfenterprises.corruptchairman.data.ClubRepository
 import com.sregfenterprises.corruptchairman.data.ClubDatabase
 import com.sregfenterprises.corruptchairman.model.Club
 import com.sregfenterprises.corruptchairman.profile.UserProfileManager
-import com.sregfenterprises.corruptchairman.profile.ChairmanProfileScreen
+import com.sregfenterprises.corruptchairman.ui.mainscreen.chairmanactivities.ChairmanProfileScreen
 import com.sregfenterprises.corruptchairman.profile.CreateProfileScreen
 import com.sregfenterprises.corruptchairman.ui.clubdetail.ClubDetailScreen
 import com.sregfenterprises.corruptchairman.ui.home.HomeScreen
@@ -109,11 +109,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     // 6️⃣ Main Screen
-                    "main" -> MainScreen(
-                        onChairmanProfileClicked = {
-                            currentScreen = "chairmanProfile"
-                        }
-                    )
+                    "main" -> MainScreen()
 
                     // 7️⃣ Chairman Profile
                     "chairmanProfile" -> ChairmanProfileScreen(

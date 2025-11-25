@@ -1,4 +1,4 @@
-package com.sregfenterprises.corruptchairman.profile
+package com.sregfenterprises.corruptchairman.ui.mainscreen.chairmanactivities
 
 import android.util.Log
 import androidx.compose.foundation.layout.*
